@@ -1,0 +1,48 @@
+.modal
+  position: fixed
+  display: flex
+  flex-direction: column
+  z-index: 10
+  left: 0
+  top: 0
+  width: 100vw
+  height: 100vh
+  overflow: auto
+  background-color: rgba(0, 0, 0, 0.99)
+
+.modal-content
+  position: relative
+  margin: auto
+  height: max-content
+  max-width: 75%
+  margin-top: 2em
+  margin-bottom: 2em
+  img
+    object-fit: scale-down
+    max-width: 100%
+  h2
+    margin: 1em auto
+    text-align: center
+    color: white
+    font-weight: 700
+    font-size: 2rem
+
+.modal-close
+  position: absolute
+  top: 10px
+  right: 2%
+  color: #f1f1f1
+  font-size: 5vw
+  font-weight: bold
+  transition: 0.3s
+
+  &:hover, &:focus
+    color: #bbb
+    text-decoration: none
+    cursor: pointer
+
+@media ( max-width: 600px  )
+
+  .modal-close
+    font-size: 10vw
+    right: 4%
