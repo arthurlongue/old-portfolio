@@ -6,7 +6,9 @@ import Home from "./pages/Home/Home"
 import Projetos from "./pages/Projetos/Projetos"
 import Sobre from "./pages/Sobre/Sobre"
 
+
 export default function App() {
+
   return (
     <>
       <Aside />
